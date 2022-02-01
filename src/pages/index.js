@@ -17,6 +17,7 @@ export default function Home() {
             <StaticImage
               src="../images/logo.png"
               alt="the nook logo"
+              placeholder="blurred"
               width={210}
             />
             <h2>Wine Bar & Restaurant</h2>
