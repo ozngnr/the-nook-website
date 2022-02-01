@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;600&family=Outfit:wght@300;400;600&family=Text+Me+One&display=swap");
+@import url("http://fonts.cdnfonts.com/css/regattia-stencil");
+
+:root {
+  /* colours */
+  --clr-bg-light: #ffffff;
+  --clr-bg-dark: #f5f4f3;
+  --clr-text: #27292d;
+  --clr-accent: #ffd900;
+
+  /* fonts */
+  --ff-title: "Cinzel", serif;
+  --ff-text: "Outfit", sans-serif;
+  --ff-neon: "Text Me One", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: var(--ff-text);
+  font-size: 16px;
+}
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-title);
+}
+p {
+  font-family: var(--ff-text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Layout */
+section:first-of-type {
+  padding-top: 5em;
+}
+
+section:nth-child(even) {
+  background: var(--clr-bg-dark);
+}
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+/* Buttons */
+
+.btn {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: var(--ff-text);
+  color: var(--clr-text);
+  background: var(--clr-bg-light);
+  padding: 0.75em 2em;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--clr-accent);
+  border-radius: 2em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--clr-bg-dark);
+}
+/* Footer */
+footer {
+  border-top: 1px solid var(--clr-accent);
+  background: var(--clr-bg-dark);
+}

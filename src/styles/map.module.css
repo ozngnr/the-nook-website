@@ -1,0 +1,18 @@
+.pin {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  transform: translateY(-100%);
+}
+
+.pin-text {
+  background: var(--clr-bg-light);
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 120px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.pin-icon {
+  font-size: 2rem;
+  margin-right: 0.25em;
+}

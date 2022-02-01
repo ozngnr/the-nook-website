@@ -1,0 +1,141 @@
+header {
+  position: sticky;
+  top: 0;
+  margin-bottom: -70px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  transition: background 0.25s ease-in-out;
+  z-index: 100;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75em 0;
+  height: 70px;
+}
+/* Toggle button */
+.nav-toggle {
+  padding: 0.5em 0;
+  background: transparent;
+  border: none;
+  place-self: center end;
+  cursor: pointer;
+}
+.hamburger {
+  position: relative;
+  display: block;
+  transition: transform 0.1s ease-in-out;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 2em;
+  height: 3px;
+  border-radius: 1em;
+  background: var(--clr-text);
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.hamburger::before {
+  top: 6px;
+}
+.hamburger::after {
+  top: -6px;
+}
+.reserve-btn {
+  display: none;
+}
+nav {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: 0 -2em;
+  background: rgba(255, 255, 255, 0.8);
+  max-height: 0px;
+  overflow: hidden;
+  z-index: 99;
+}
+nav ul {
+  margin: 0;
+  padding-top: 3em;
+  text-align: center;
+  list-style: none;
+}
+nav li {
+  margin-bottom: 3em;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-text);
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: var(--clr-accent);
+}
+.nav-open nav {
+  max-height: 1000px;
+  transition: max-height 0.25s linear;
+}
+.nav-open span {
+  transform: rotate(135deg);
+}
+.nav-open span::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+.nav-open span::after {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  header {
+    margin-bottom: -80px;
+  }
+
+  header:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: start;
+    height: 80px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .reserve-btn {
+    display: block;
+  }
+  nav {
+    position: relative;
+    max-height: 100%;
+    border: none;
+    background: none;
+    margin: 0;
+    top: 0;
+    justify-self: end;
+  }
+  nav ul {
+    display: flex;
+    padding: 0;
+  }
+  nav li {
+    margin-left: 1em;
+    padding: 0.25em;
+    margin-bottom: 0;
+  }
+  nav a {
+    text-transform: none;
+    font-size: 1.125rem;
+  }
+}
