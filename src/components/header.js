@@ -28,6 +28,7 @@ export default function Header() {
               alt="logo"
               width={150}
               loading="eager"
+              placeholder="blurred"
             />
           </Link>
           <button onClick={toggleNav} className={styles.navToggle}>
