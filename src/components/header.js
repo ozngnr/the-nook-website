@@ -23,7 +23,12 @@ export default function Header() {
             BOOK A TABLE
           </Link>
           <Link to="/">
-            <StaticImage src="../images/logo.png" alt="logo" width={150} />
+            <StaticImage
+              src="../images/logo.png"
+              alt="logo"
+              width={150}
+              loading="eager"
+            />
           </Link>
           <button onClick={toggleNav} className={styles.navToggle}>
             <span className={styles.hamburger}></span>

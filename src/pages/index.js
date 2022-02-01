@@ -18,6 +18,7 @@ export default function Home() {
               src="../images/logo.png"
               alt="the nook logo"
               placeholder="blurred"
+              loading="eager"
               width={210}
             />
             <h2>Wine Bar & Restaurant</h2>
