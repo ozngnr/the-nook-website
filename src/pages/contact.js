@@ -99,8 +99,6 @@ export const query = graphql`
   query ContactDetails {
     contact: site {
       siteMetadata {
-        description
-        title
         location {
           address
           lat

@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,15 +28,19 @@ module.exports = {
     `gatsby-transformer-sharp`, // Needed for dynamic images
   ],
   siteMetadata: {
-    title: "The Nook Restaurant",
-    description: "Wine bar & restaurant",
+    siteTitle: "The Nook London",
+    siteDescription:
+      "Wine bar & restaurant || The Nook is an all day venue, where you can find drinks and food for all times of the day alongside friendly company and lively music.",
     contact: "hello@thenooklondon.co.uk",
     tel: "020 7288 2929",
+    siteImage: "src/images/logo.png",
     location: {
       address: "220 St. Paul's Road, London N1 2LL, UK",
       lat: 51.5469759,
       lng: -0.098375,
     },
     copyright: "Copyright The Nook 2022",
+    siteKeywords:
+      "wine bar, restaurant, food, natural wine, london, islington, shop",
   },
 }
