@@ -13,7 +13,7 @@ const LocationPin = ({ text }) => (
 export default function Map({ location, zoomLevel }) {
   return (
     <GoogleMapReact
-      bootstrapURLKeys={{ key: "AIzaSyCsBbTdDR5SpsxpSYDZUr672Bwqp_2zqyo" }}
+      bootstrapURLKeys={{ key: process.env.GATSBY_MAPS_API_KEY }}
       defaultCenter={location}
       defaultZoom={zoomLevel}
     >
