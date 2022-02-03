@@ -31,7 +31,12 @@ export default function Contact({ data }) {
                       <FaPhone />
                     </td>
                     <td>
-                      <a href={`tel:+44${tel}`}>{tel}</a>
+                      <a
+                        aria-label="Restaurant phone number"
+                        href={`tel:+44${tel}`}
+                      >
+                        {tel}
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -39,7 +44,12 @@ export default function Contact({ data }) {
                       <FaEnvelope />
                     </td>
                     <td>
-                      <a href={`mailto:${contact}`}>{contact}</a>
+                      <a
+                        aria-label="Restaurant email address"
+                        href={`mailto:${contact}`}
+                      >
+                        {contact}
+                      </a>
                     </td>
                   </tr>
                   <tr>
@@ -52,6 +62,7 @@ export default function Contact({ data }) {
               </table>
               <div className={styles.socials}>
                 <a
+                  aria-label="Instagram link"
                   href="https://instagram.com/thenook_london"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -59,6 +70,7 @@ export default function Contact({ data }) {
                   <FaInstagram style={{ marginRight: "0.25em" }} />
                 </a>
                 <a
+                  aria-label="Facebook link"
                   href="https://facebook.com/TheNookLondon/"
                   target="_blank"
                   rel="noopener noreferrer"

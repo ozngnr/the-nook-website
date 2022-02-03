@@ -1,11 +1,7 @@
 .hero {
   position: relative;
+  display: none;
   height: 100vh;
-  background: url("../images/hero.jpg");
-  background-color: rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
 }
 
 .hero-container {
@@ -54,7 +50,7 @@
   position: absolute;
   width: 100%;
   bottom: 4em;
-  color: white;
+  color: var(--clr-accent);
   opacity: 0.6;
   animation: bounce 1.5s 2;
 }
@@ -76,5 +72,16 @@
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+
+@media (min-width: 600px) {
+  .hero {
+    display: block;
+    background: url("../images/hero.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
   }
 }

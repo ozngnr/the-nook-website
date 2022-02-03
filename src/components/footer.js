@@ -38,6 +38,7 @@ export default function Footer() {
             </p>
             <div className={styles.socialIcons}>
               <a
+                aria-label="Instagram link"
                 href="https://instagram.com/thenook_london"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,6 +46,7 @@ export default function Footer() {
                 <FaInstagram style={{ marginRight: "0.25em" }} />
               </a>
               <a
+                aria-label="Facebook link"
                 href="https://facebook.com/TheNookLondon/"
                 target="_blank"
                 rel="noopener noreferrer"
