@@ -12,8 +12,7 @@ const Hero = () => {
           <StaticImage
             src="../images/logo.png"
             alt="the nook logo"
-            placeholder="blurred"
-            loading="eager"
+            placeholder="tracedSVG"
             width={210}
           />
           <h2>Wine Bar & Restaurant</h2>
