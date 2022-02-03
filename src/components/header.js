@@ -27,11 +27,14 @@ export default function Header() {
               src="../images/logo.png"
               alt="logo"
               width={150}
-              loading="eager"
-              placeholder="blurred"
+              placeholder="tracedSVG"
             />
           </Link>
-          <button onClick={toggleNav} className={styles.navToggle}>
+          <button
+            onClick={toggleNav}
+            className={styles.navToggle}
+            aria-label="menu button"
+          >
             <span className={styles.hamburger}></span>
           </button>
           <nav>

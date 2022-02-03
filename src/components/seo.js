@@ -18,6 +18,7 @@ export default function SEO({ title, description, keywords, image }) {
 
   return (
     <Helmet
+      lang="en"
       title={seo.title}
       titleTemplate={siteTitle}
       meta={[

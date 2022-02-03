@@ -37,6 +37,7 @@ export default function About() {
                 <StaticImage
                   src="../images/hero.jpg"
                   alt="a few plates of food on a table"
+                  placeholder="none"
                 />
               </div>
             </div>
@@ -59,6 +60,7 @@ export default function About() {
                   alt="a hand holding a wine bottle"
                   imgClassName={styles.aboutImg}
                   className={styles.aboutImg}
+                  placeholder="none"
                 />
               </div>
             </div>
@@ -74,7 +76,11 @@ export default function About() {
                 </p>
               </div>
               <div className={styles.aboutImg}>
-                <StaticImage src="../images/turntable.jpg" alt="turntable" />
+                <StaticImage
+                  src="../images/turntable.jpg"
+                  alt="turntable"
+                  placeholder="none"
+                />
                 <span className={styles.photoCredit}>
                   <em>
                     Photo by{" "}
