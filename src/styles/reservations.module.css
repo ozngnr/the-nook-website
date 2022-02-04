@@ -35,11 +35,14 @@
   border: none;
   border-radius: 5px;
   font-family: var(--ff-text);
+  background: var(--clr-bg-light);
   color: #333;
   cursor: pointer;
   -webkit-appearance: none;
 }
-
+.reservations__form input[type="date"] {
+  text-align: left;
+}
 .reservations__form input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
   margin-left: 0;
