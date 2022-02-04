@@ -7,9 +7,7 @@ export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
   const navClass = navOpen ? styles.navOpen : null
 
-  const toggleNav = () => {
-    return navOpen ? setNavOpen(false) : setNavOpen(true)
-  }
+  const toggleNav = () => setNavOpen(!navOpen)
 
   return (
     <header className={navClass}>

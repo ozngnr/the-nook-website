@@ -31,7 +31,9 @@ body {
 body {
   position: relative;
   font-family: var(--ff-text);
+  color: var(--clr-text);
   font-size: 16px;
+  line-height: 1.4;
 }
 /* TYPOGRAPHY */
 
@@ -39,6 +41,7 @@ h1,
 h2,
 h3 {
   font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
 }
 p {
   font-family: var(--ff-text);
@@ -74,6 +77,7 @@ section:nth-child(even) {
   max-width: 1300px;
   margin: 0 auto;
 }
+
 /* Buttons */
 
 .btn {

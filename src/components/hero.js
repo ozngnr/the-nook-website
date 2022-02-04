@@ -2,7 +2,7 @@ import React from "react"
 import * as styles from "../styles/hero.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { FaChevronDown } from "@react-icons/all-files/fa/FaChevronDown"
+import { IoChevronDown } from "react-icons/io5"
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
     </div> */}
         <div className={styles.scroll}>
           <span>scroll down</span>
-          <FaChevronDown />
+          <IoChevronDown />
         </div>
       </div>
     </div>

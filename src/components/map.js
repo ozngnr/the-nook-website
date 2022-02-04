@@ -1,7 +1,7 @@
 import React from "react"
 import GoogleMapReact from "google-map-react"
 import * as styles from "../styles/map.module.css"
-import { FaMapMarkerAlt } from "@react-icons/all-files/fa/FaMapMarkerAlt"
+import { FaMapMarkerAlt } from "react-icons/fa"
 
 const LocationPin = ({ text }) => (
   <div className={styles.pin}>
