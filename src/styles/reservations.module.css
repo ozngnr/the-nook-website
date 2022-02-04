@@ -14,5 +14,51 @@
 }
 .reservations__form h2 {
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
+}
+
+.reservations__form form {
+  display: flex;
+  flex-direction: column;
+}
+.reservations__form .styled-field {
+  position: relative;
+}
+
+.reservations__form select,
+.reservations__form input[type="date"] {
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--ff-text);
+  color: #333;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.reservations__form input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  padding-left: calc(100% - 110px);
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.reservations__form input::-webkit-datetime-edit-day-field:focus,
+.reservations__form input::-webkit-datetime-edit-month-field:focus,
+.reservations__form input::-webkit-datetime-edit-year-field:focus {
+  background-color: var(--clr-accent);
+  border-radius: 5px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 14px;
+  top: 23px;
+  cursor: pointer;
+}
+
+.reservations__form button {
+  margin-top: 1em;
 }

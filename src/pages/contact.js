@@ -3,11 +3,13 @@ import { graphql } from "gatsby"
 import * as styles from "../styles/contact.module.css"
 import Layout from "../components/layout"
 import Map from "../components/map"
-import { FaMapMarkerAlt } from "@react-icons/all-files/fa/FaMapMarkerAlt"
-import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope"
-import { FaPhone } from "@react-icons/all-files/fa/FaPhone"
-import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
-import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook"
+import {
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaPhone,
+  FaInstagram,
+  FaFacebook,
+} from "react-icons/fa"
 
 export default function Contact({ data }) {
   const { location, contact, tel } = data.contact.siteMetadata

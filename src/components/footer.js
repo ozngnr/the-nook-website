@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
-import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook"
+import { FaInstagram } from "react-icons/fa"
+import { FaFacebook } from "react-icons/fa"
 import * as styles from "../styles/footer.module.css"
 
 export default function Footer() {

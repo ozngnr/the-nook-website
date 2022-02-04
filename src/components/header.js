@@ -7,13 +7,7 @@ export default function Header() {
   const [navOpen, setNavOpen] = useState(false)
   const navClass = navOpen ? styles.navOpen : null
 
-  const toggleNav = () => {
-    if (navOpen) {
-      setNavOpen(false)
-    } else {
-      setNavOpen(true)
-    }
-  }
+  const toggleNav = () => setNavOpen(!navOpen)
 
   return (
     <header className={navClass}>
@@ -40,16 +34,24 @@ export default function Header() {
           <nav>
             <ul>
               <li>
-                <Link to="/#intro">Home</Link>
+                <Link to="/#intro" onClick={toggleNav}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" onClick={toggleNav}>
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/menus/dinner">Menu</Link>
+                <Link to="/menus/dinner" onClick={toggleNav}>
+                  Menu
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" onClick={toggleNav}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </nav>
