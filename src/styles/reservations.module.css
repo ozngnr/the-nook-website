@@ -27,6 +27,8 @@
 
 .reservations__form select,
 .reservations__form input[type="date"] {
+  font-size: 1rem;
+  font-weight: var(--fw-light);
   width: 100%;
   margin: 0.5em 0;
   padding: 1em;
@@ -40,7 +42,6 @@
 
 .reservations__form input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
-  padding-left: calc(100% - 110px);
   margin-left: 0;
   cursor: pointer;
 }
@@ -55,7 +56,8 @@
 .input-icon {
   position: absolute;
   right: 14px;
-  top: 23px;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
