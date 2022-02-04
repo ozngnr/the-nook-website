@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../styles/reservations.module.css"
+import "react-datepicker/dist/react-datepicker.css"
+import DatePicker from "react-datepicker"
+
 import moment from "moment"
 import {
   IoCalendarClearOutline,
@@ -14,7 +17,7 @@ const BASE_URL =
 
 export default function Reservations() {
   const [partySize, setPartySize] = useState("2")
-  const [date, setDate] = useState(moment().format("YYYY-MM-DD"))
+  const [date, setDate] = useState(new Date())
   const [time, setTime] = useState("18:00")
   //create time options for form select
   const createTimeOptions = (startTime, endTime) => {
@@ -29,9 +32,12 @@ export default function Reservations() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    window.open(`${BASE_URL}&partysize=${partySize}&datetime=${date}T${time}`)
+
+    const formattedDate = moment(date).format("YYYY-MM-DD")
+    window.open(
+      `${BASE_URL}&partysize=${partySize}&datetime=${formattedDate}T${time}`
+    )
   }
-  console.log(partySize, date, time)
 
   return (
     <section className={styles.reservations} id="reservations">
@@ -54,21 +60,18 @@ export default function Reservations() {
             </select>
           </div>
           <div className={styles.styledField}>
-            <IoCalendarClearOutline className={styles.inputIcon} />
-            <input
-              type="date"
-              name="date"
-              id="date"
-              placeholder="Select Date"
-              value={date}
-              onChange={e => setDate(e.target.value)}
+            <DatePicker
+              className={styles.datePicker}
+              popperClassName={styles.datePopper}
+              selected={date}
+              onChange={value => setDate(value)}
+              dateFormat="dd/MM/yyyy"
             />
+            <IoCalendarClearOutline className={styles.inputIcon} />
           </div>
           <div className={styles.styledField}>
             <IoTimeOutline className={styles.inputIcon} />
             <select
-              id="time-picker"
-              name="time-picker"
               value={time}
               placeholder="Select Time"
               onChange={e => setTime(e.target.value)}

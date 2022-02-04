@@ -25,8 +25,8 @@
   position: relative;
 }
 
-.reservations__form select,
-.reservations__form input[type="date"] {
+.date-picker,
+.reservations__form select {
   font-size: 1rem;
   font-weight: var(--fw-light);
   width: 100%;
@@ -39,14 +39,6 @@
   color: #333;
   cursor: pointer;
   -webkit-appearance: none;
-}
-.reservations__form input[type="date"] {
-  text-align: left;
-}
-.reservations__form input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  margin-left: 0;
-  cursor: pointer;
 }
 
 .reservations__form input::-webkit-datetime-edit-day-field:focus,
