@@ -41,6 +41,7 @@
   -webkit-appearance: none;
 }
 .reservations__form input[type="date"] {
+  display: block;
   text-align: left;
 }
 .reservations__form input[type="date"]::-webkit-calendar-picker-indicator {
