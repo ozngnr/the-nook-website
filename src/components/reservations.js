@@ -19,6 +19,7 @@ export default function Reservations() {
   const [partySize, setPartySize] = useState("2")
   const [date, setDate] = useState(new Date())
   const [time, setTime] = useState("18:00")
+
   //create time options for form select
   const createTimeOptions = (startTime, endTime) => {
     const timesArr = []
@@ -62,10 +63,10 @@ export default function Reservations() {
           <div className={styles.styledField}>
             <DatePicker
               className={styles.datePicker}
-              popperClassName={styles.datePopper}
               selected={date}
               onChange={value => setDate(value)}
               dateFormat="dd/MM/yyyy"
+              onFocus={e => (e.target.readOnly = true)} // hides keyboard on mobile
             />
             <IoCalendarClearOutline className={styles.inputIcon} />
           </div>
