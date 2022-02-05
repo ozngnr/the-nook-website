@@ -100,6 +100,6 @@ export default function Reservations() {
 //custom component that hides keyboard on mobile
 class DateInput extends React.Component {
   render() {
-    return <input {...this.props} />
+    return <input {...this.props} readOnly />
   }
 }
