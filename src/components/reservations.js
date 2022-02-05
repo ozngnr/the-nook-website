@@ -66,7 +66,7 @@ export default function Reservations() {
               selected={date}
               onChange={value => setDate(value)}
               dateFormat="dd/MM/yyyy"
-              onFocus={e => (e.target.readOnly = true)} // hides keyboard on mobile
+              customInput={<DateInput />}
             />
             <IoCalendarClearOutline className={styles.inputIcon} />
           </div>
@@ -96,4 +96,10 @@ export default function Reservations() {
       />
     </section>
   )
+}
+//custom component that hides keyboard on mobile
+class DateInput extends React.Component {
+  render() {
+    return <input {...this.props} />
+  }
 }
