@@ -35,6 +35,8 @@ module.exports = {
     tel: "020 7288 2929",
     siteImage: "src/images/logo.png",
     location: {
+      place: "The Nook",
+      placeId: "ChIJcbMx61IbdkgRrH8qzAG_wZw",
       address: "220 St. Paul's Road, London N1 2LL, UK",
       lat: 51.5469759,
       lng: -0.098375,

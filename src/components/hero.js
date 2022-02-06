@@ -12,10 +12,10 @@ const Hero = () => {
           <StaticImage
             src="../images/logo.png"
             alt="the nook logo"
-            placeholder="tracedSVG"
-            width={210}
+            placeholder="none"
+            width={250}
           />
-          <h2>Wine Bar & Restaurant</h2>
+          <h2>Wine, Wax & Deli</h2>
         </div>
         {/* <div className={styles.themeToggler}>
       <span className={styles.themeName}>dark</span>|

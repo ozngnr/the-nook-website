@@ -114,6 +114,8 @@ export const query = graphql`
     contact: site {
       siteMetadata {
         location {
+          place
+          placeId
           address
           lat
           lng

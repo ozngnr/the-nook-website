@@ -10,27 +10,29 @@ export default function About() {
         <div className="container">
           <h1>ABOUT US</h1>
           <p>
-            The Nook is an all day venue, where you can find drinks and food for
-            all times of the day alongside friendly company and lively music.
-            You can come and hangout with us in the deli or pop in for a shop!
+            The Nook is a wine bar, where you can find drinks of all varieties
+            and seasonal food! Our focus is to serve only what we love, with the
+            friendliest service and handpicked great music as a bonus!
           </p>
           <div className={styles.about__content}>
             <div className={styles.row}>
               <div className={styles.aboutText}>
                 <h3>DELI</h3>
                 <p>
-                  Fresh homemade food for all times of the day to have it in or
-                  take away. We have breakfast specials and pastries in the
-                  morning, indulgent hot sandwiches plus daily mezze and salads
-                  for lunch and a dinner menu for dining with us in the
-                  evenings.
+                  Fresh homemade food alongside all the wine bar classics. We
+                  have great suppliers for our cheese, charcuterie, olives and
+                  snacks. We pickle and ferment, as well as banging out
+                  delicious chutneys, sauces and spreads.
                 </p>
                 <p>
-                  We called it Contemporary European with a Turkish Twist which
-                  in short, is a lot of fresh seasonal food that goes well with
-                  wine. On Saturdays and Sundays we also cook all sorts of eggs
-                  and shake some cocktails. We think a strong brunch is the best
-                  way to start a cheeky weekend or get over a hangover!
+                  It is possible to shop deli products, bottles of natural wine,
+                  beers and fresh bread from Bread by Bike for takeaway. We are
+                  working on our takeaway offer to be available for deliveries
+                  in London and nationwide too. Just keep an eye on our updates!
+                  On Friday and Saturdays we also cook some eggs and cheeky
+                  sandwiches for lunchtime alongside shaking some cocktails just
+                  because we think a strong brunch is the best way to start a
+                  cheeky weekend or get over a hangover!
                 </p>
               </div>
               <div className={styles.aboutImg}>
@@ -72,7 +74,9 @@ export default function About() {
                   We have a small selection of records for sale. Our selection
                   is from independent labels, predominantly London based. You
                   can listen to the records, just ask us to get it on for you or
-                  enjoy the playlist of the day.
+                  enjoy the playlist of the day. We also have a full dj set up
+                  for parties and private hires in the Nook, just give us a
+                  shout for more info!
                 </p>
               </div>
               <div className={styles.aboutImg}>

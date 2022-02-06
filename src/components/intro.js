@@ -15,10 +15,10 @@ export default function Intro() {
           <div className={styles.intro__body}>
             <h2>OUR STORY</h2>
             <p>
-              The Nook is an all day venue, where you can find drinks and food
-              for all times of the day alongside friendly company and lively
-              music. You can come and hangout with us in the deli or pop in for
-              a shop!
+              The Nook is a wine bar serving seasonal small plates and a range
+              of low intervention & classic wines. Our focus is to serve only
+              what we love, with the friendliest service and handpicked great
+              music as a bonus!
             </p>
             <a href="/about" className="btn">
               READ MORE

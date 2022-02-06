@@ -3,13 +3,15 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
   padding: 2em 0;
-  font-size: 0.825em;
+  font-size: 0.825rem;
   font-weight: 300;
 }
 .footer__content h3 {
   font-weight: 400;
 }
-
+.footer__content p {
+  font-size: inherit;
+}
 .footer__content img {
   width: 100%;
   height: auto;
@@ -23,7 +25,7 @@
   margin-bottom: 1em;
 }
 .footer__content li:last-of-type {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .footer__content a {
