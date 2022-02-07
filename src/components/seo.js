@@ -47,7 +47,17 @@ export default function SEO({ title, description, keywords, image }) {
           content: `website`,
         },
       ].concat(seo.meta)}
-    ></Helmet>
+    >
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-CG7P8P55MP"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || []; function gtag()
+        {dataLayer.push(arguments)}
+        gtag('js', new Date()); gtag('config', 'G-CG7P8P55MP');
+      </script>
+    </Helmet>
   )
 }
 
