@@ -23,6 +23,13 @@ module.exports = {
         path: `${__dirname}/src/menus`,
       },
     },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-NB4C6SQ",
+        includeInDevelopment: false,
+      },
+    },
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
