@@ -85,20 +85,20 @@ export default function About() {
                   alt="turntable"
                   placeholder="none"
                 />
-                <span className={styles.photoCredit}>
-                  <em>
-                    Photo by{" "}
-                    <a href="https://unsplash.com/@getuliodt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                      Getúlio Moraes
-                    </a>{" "}
-                    on{" "}
-                    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-                      Unsplash
-                    </a>
-                  </em>
-                </span>
               </div>
             </div>
+            <span className={styles.photoCredit}>
+              <em>
+                Photo by{" "}
+                <a href="https://unsplash.com/@getuliodt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                  Getúlio Moraes
+                </a>{" "}
+                on{" "}
+                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                  Unsplash
+                </a>
+              </em>
+            </span>
           </div>
         </div>
       </section>

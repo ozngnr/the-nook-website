@@ -5,9 +5,10 @@
 .row {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1em;
 }
 .about-text {
-  padding: 1.5em 0;
+  padding: 1em 0;
   z-index: 99;
   border-radius: 5px;
 }
@@ -16,8 +17,9 @@
   margin: 0.5em 0;
 }
 .photo-credit {
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   font-weight: var(--fw-light);
+  margin-top: -1em;
   float: right;
 }
 .photo-credit a {
@@ -31,8 +33,7 @@ h1 + p {
 @media (min-width: 700px) {
   .row {
     flex-direction: row;
-    max-height: 650px;
-    margin-bottom: 1em;
+    align-items: center;
   }
   .reverse {
     flex-direction: row-reverse;
@@ -52,7 +53,7 @@ h1 + p {
   }
   .about-img {
     flex: 1 0 40%;
-    max-height: 100%;
+    max-height: 650px;
     overflow: hidden;
     border-radius: 5px;
   }
